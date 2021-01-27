@@ -1,7 +1,4 @@
 /*Element styles*/
-body {
-  background-color: #f3fdf3;
-}
 
 /*Descendent selectors*/
 .content-container img {
@@ -20,4 +17,8 @@ body {
 /*Class selectors*/
 .footer {
   background-color: #d5fad5;
+}
+
+.content-container {
+  background-color: #e1f7e1;
 }
