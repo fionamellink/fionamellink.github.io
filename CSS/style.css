@@ -30,11 +30,11 @@ a {
 
 /* --- Class selectors --- */
 .footer {
-  background-color: #ade0ad;
+  background-color: #a6e9d7;
 }
 
 .content-container {
-  background-color: #e1f7e1;
+  background-color: #d5f5ec;
 }
 
 /* ---- Navigation ---- */
@@ -71,7 +71,7 @@ a {
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-  background-color: #ade0ad;
+  background-color: #a6e9d7;
 }
 
 /* ---- Page Elements ---- */
