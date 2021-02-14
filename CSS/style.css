@@ -14,6 +14,48 @@ a {
 	text-decoration: none;
 }
 
+/* =================================
+Navigation
+==================================== */
+
+.name {
+	font-size: 1.35em;
+	margin: 0;
+  color: white;
+}
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+}
+.main-nav a,
+.footer a,
+.footer p {
+	font-size: .95em;
+	color: white;
+	text-transform: uppercase;
+  font-weight: bold;
+}
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+  background-color: #a6e9d7;
+}
+
+
+/* =================================
+Content
+==================================== */
+
 /* --- Descendent selectors --- */
 .content-container img {
   width: 100%;
@@ -37,44 +79,6 @@ a {
   background-color: #d5f5ec;
 }
 
-/* ---- Navigation ---- */
-
-.name {
-	font-size: 1.35em;
-	margin: 0;
-  color: white;
-}
-.main-nav {
-	margin-top: 5px;
-}
-.name a,
-.main-nav a {
-	text-align: center;
-	display: block;
-	padding: 10px 15px;
-}
-.main-nav a {
-	font-size: .95em;
-	color: white;
-	text-transform: uppercase;
-}
-.main-nav a:hover {
-	color: #093a58;
-}
-
-.main-nav li {
-  padding: 0px 20px;
-}
-
-/* ---- Layout Containers ---- */
-
-.main-header {
-	padding-top: .5em;
-	padding-bottom: .5em;
-  background-color: #a6e9d7;
-}
-
-/* ---- Page Elements ---- */
 
 
 /* =================================
@@ -83,15 +87,24 @@ a {
 
 @media (min-width: 769px) {
 
-  .main-header,
-  .main-nav {
-    display: flex;
-  }
+.container {
+  width: 85%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
 
-  .main-header {
-   flex-direction: column;
-   align-items: center;
-  }
+.main-nav {
+  float: right;
+}
+
+.name a,
+.main-nav li {
+  float: left;
+  padding: 10px 0px;
+}
+
+.main-nav li {
+  margin-left: 12px;
 }
 
 @media (min-width: 1025px) {
@@ -100,4 +113,15 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .main-nav li {
+    padding-left: 48px;
+  }
+
+  .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 }
