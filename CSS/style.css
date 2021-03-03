@@ -16,6 +16,8 @@ a {
 
 img {
   width: 300px;
+  margin: auto;
+  display: block;
 }
 
 /* =================================
@@ -85,6 +87,12 @@ Content
 
 .content-container {
   background-color: #d5f5ec;
+}
+
+.text {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
