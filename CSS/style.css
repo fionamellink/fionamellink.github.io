@@ -3,6 +3,28 @@
 ==================================== */
 
 /* --- Element styles --- */
+body {
+  color: black;
+  margin: 0;
+  font-size: 1em; /* 16px */
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px/16px  */
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 1.8755em; /* 30px/16px  */
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+}
 
 ul {
   margin: 0;
@@ -14,10 +36,8 @@ a {
 	text-decoration: none;
 }
 
-img {
-  width: 300px;
-  margin: auto;
-  display: block;
+address {
+  font-style: normal;
 }
 
 /* =================================
@@ -55,7 +75,7 @@ Navigation
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-  background-color: #a6e9d7;
+  background-color: #365E7B;
 }
 
 
@@ -64,6 +84,12 @@ Content
 ==================================== */
 
 /* --- Descendent selectors --- */
+img {
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
 .content-container img {
   width: 100%;
   height: 100%;
@@ -79,10 +105,17 @@ Content
 
 /* --- Class selectors --- */
 .footer {
-  background-color: #a6e9d7;
+  background-color: #365E7B;
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
+  float: left;
+}
+
+.footer-column {
+  display: inline-block;
+  width: 50%;
+  float: left;
 }
 
 .content-container {
@@ -95,7 +128,11 @@ Content
   margin-right: 10px;
 }
 
-
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
 
 /* =================================
   Media Queries
@@ -139,6 +176,7 @@ img {
 
 .text {
   margin-right: 50px;
+  text-align: left;
 }
 
 .about-text {
@@ -167,11 +205,5 @@ img {
   .main-nav li {
     padding-left: 48px;
   }
-
-  .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 }
